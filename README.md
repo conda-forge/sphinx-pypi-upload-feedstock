@@ -11,6 +11,18 @@ Summary: setuptools command for uploading Sphinx documentation to PyPI
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sphinx-pypi-upload-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sphinx-pypi-upload-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/sphinx-pypi-upload-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sphinx-pypi-upload-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sphinx-pypi-upload-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sphinx-pypi-upload-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sphinx-pypi-upload/badges/version.svg)](https://anaconda.org/conda-forge/sphinx-pypi-upload)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sphinx-pypi-upload/badges/downloads.svg)](https://anaconda.org/conda-forge/sphinx-pypi-upload)
+
 Installing sphinx-pypi-upload
 =============================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `sphinx-pypi-upload` available on 
 ```
 conda search sphinx-pypi-upload --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sphinx-pypi-upload-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sphinx-pypi-upload-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sphinx-pypi-upload-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sphinx-pypi-upload-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sphinx-pypi-upload-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sphinx-pypi-upload-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sphinx-pypi-upload/badges/version.svg)](https://anaconda.org/conda-forge/sphinx-pypi-upload)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sphinx-pypi-upload/badges/downloads.svg)](https://anaconda.org/conda-forge/sphinx-pypi-upload)
 
 
 Updating sphinx-pypi-upload-feedstock
