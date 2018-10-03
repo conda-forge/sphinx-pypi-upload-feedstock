@@ -1,9 +1,7 @@
-{%set name = "Sphinx-PyPI-upload" %}
-{%set version = "0.2.1" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "5f919a47ce7a7e6028dba809de81ae1297ac192347cf6fc54efca919d4865159" %}
-{%set build_num = "0" %}
+{% set name = "Sphinx-PyPI-upload" %}
+{% set version = "0.2.1" %}
+{% set compress_type = "tar.gz" %}
+{% set sha256 = "5f919a47ce7a7e6028dba809de81ae1297ac192347cf6fc54efca919d4865159" %}
 
 package:
   name: {{ name|lower }}
@@ -12,22 +10,20 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ sha256 }}
 
 build:
   skip: True  # [py3k]
   preserve_egg_dir: True
   entry_points:
     - upload_sphinx = sphinx_pypi_upload:UploadDoc
-
-  number: {{ build_num }}
+  number: 1000
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
-
   run:
     - python
     - setuptools
